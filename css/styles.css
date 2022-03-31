@@ -1,0 +1,241 @@
+body{
+  margin: 0;
+  overflow: hidden;
+}
+canvas{
+  cursor: grab;
+}
+
+/* HEADER */
+#header {
+  
+  height: 80px;
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+}
+
+#header.header-scrolled {
+  background: #00178D;
+  height: 60px;
+}
+
+#header .logo img {
+  padding: 0;
+  margin: 0;
+  max-height: 40px;
+}
+
+/* NAVBAR */
+.navbar {
+  padding: 0;
+  position: relative;
+}
+
+.navbar ul {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+  align-items: center;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a, .navbar a:focus {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0 10px 30px;
+
+  transition: 0.3s;
+
+  font-family: Inter;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+
+  color: #FFFFFF;
+}
+
+.navbar a i, .navbar a:focus i {
+  font-size: 12px;
+  line-height: 0;
+  margin-left: 5px;
+}
+
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+  color: #ef4123;
+}
+
+.navbar a:hover, .navbar .active, .navbar .active:focus, .navbar li:hover > a {
+  color: #ef4123;
+}
+.navbar .getstarted {
+  color: #2f8ccc;
+  padding: 8px 25px;
+  margin-left: 30px;
+  border-radius: 4px;
+  border: 2px solid #ef4123;
+  transition: 0.3s;
+  font-size: 14px;
+}
+
+.navbar .getstarted:hover {
+  background: #16b3ac;
+  color: #fff;
+}
+/* POP-UP */
+#popup {
+  height: 80px;
+  transition: all 0.5s;
+  z-index: 997;
+
+}
+
+.modal.left .modal-dialog,
+.modal.right .modal-dialog {
+  position: fixed;
+  margin: auto;
+  width: 450px;
+  height: 100%;
+  -webkit-transform: translate3d(0%, 0, 0);
+      -ms-transform: translate3d(0%, 0, 0);
+       -o-transform: translate3d(0%, 0, 0);
+          transform: translate3d(0%, 0, 0);
+}
+
+.modal.left .modal-content,
+.modal.right .modal-content {
+  height: 100%;
+  overflow-y: auto;
+}
+
+.modal.left .modal-body,
+.modal.right .modal-body {
+  padding: 15px 15px 80px;
+}
+
+/*Left*/
+.modal.left.fade .modal-dialog{
+  left: -320px;
+  -webkit-transition: opacity 0.3s linear, left 0.3s ease-out;
+     -moz-transition: opacity 0.3s linear, left 0.3s ease-out;
+       -o-transition: opacity 0.3s linear, left 0.3s ease-out;
+          transition: opacity 0.3s linear, left 0.3s ease-out;
+}
+
+.modal.left.fade.in .modal-dialog{
+  left: 0;
+}
+      
+/*Right*/
+.modal.right.fade .modal-dialog {
+  right: -320px;
+  -webkit-transition: opacity 0.3s linear, right 0.3s ease-out;
+     -moz-transition: opacity 0.3s linear, right 0.3s ease-out;
+       -o-transition: opacity 0.3s linear, right 0.3s ease-out;
+          transition: opacity 0.3s linear, right 0.3s ease-out;
+}
+
+.modal.right.fade.in .modal-dialog {
+  right: 0;
+}
+
+/* ----- MODAL STYLE ----- */
+.modal-content {
+  border-radius: 0;
+  border: none;
+}
+
+.modal-header {
+  border-bottom-color: #EEEEEE;
+  background-color: #FAFAFA;
+}
+
+/* FOOTER */
+
+#footer {
+  
+  height: 80px;
+  transition: all 0.5s;
+  z-index: 997;
+  transition: all 0.5s;
+  text-align: center;
+  padding: 40px;
+  margin-bottom: 0px;
+}
+
+#footer h3 {
+  font-size: 36px;
+  font-weight: 700;
+  color: #fff;
+  position: relative;
+  font-family: "Poppins", sans-serif;
+  padding: 0;
+  margin: 0 0 15px 0;
+}
+
+#footer p {
+  font-size: 15;
+  font-style: italic;
+  padding: 0;
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links {
+  margin: 0 0 40px 0;
+}
+
+#footer .social-links a {
+  font-size: 18px;
+  display: inline-block;
+  background: #EF4123;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links a:hover {
+  background: #16b3ac;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .social-links button {
+  font-size: 18px;
+  display: inline-block;
+  background: #EF4123;
+  color: #fff;
+  line-height: 1;
+  padding: 8px 0;
+  margin-right: 4px;
+  border-radius: 50%;
+  text-align: center;
+  width: 36px;
+  height: 36px;
+  transition: 0.3s;
+}
+
+#footer .social-links button:hover {
+  background: #16b3ac;
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer .copyright {
+  margin: 0 0 5px 0;
+}
+
+#footer .credits {
+  font-size: 13px;
+}
+
